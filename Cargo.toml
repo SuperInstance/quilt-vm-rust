@@ -1,0 +1,20 @@
+[package]
+name = "quilt-vm"
+version = "0.1.0"
+description = "The 5-opcode Quilt VM in Rust. Foundation for cells, plugins, sheets, MUDs, TTRPGs, and the bay dance."
+license = "MIT"
+authors = ["SuperInstance"]
+edition = "2021"
+
+[lib]
+name = "quilt_vm"
+path = "src/lib.rs"
+
+[dependencies]
+
+[[bin]]
+name = "quilt-gold"
+path = "src/bin/gold.rs"
+
+[profile.release]
+opt-level = 3
